@@ -1,62 +1,94 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Genre Classifier</title>
     <style>
-        .head {
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 2em;
+            font-size: 2em;
+        }
+
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 30px;
-            height: 5ch;
-        }
-
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-size: 25px;
-        }
-
-        form {
-            height: 500px;
-            width: 1000px;
-            background-color: rgb(155, 226, 122);
-            padding: 20px;
-            border-radius: 10px;
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            height: 80vh;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .form-wrapper {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 400px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 15px;
         }
 
         #text {
             height: 100px;
-            width: 500px;
-            font-size: 20px;
+            width: calc(100% - 30px);
+            font-size: 1em;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            resize: none;
+            box-sizing: border-box;
         }
 
-        textarea {
-            height: 500px;
-            width: 500px;
-            font-size: 20px;
-        }
-
-        input {
-            font-size: 20px;
-            padding: 10px;
+        input[type="submit"] {
+            font-size: 1.2em;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
         }
     </style>
-    <div class="head"><b>Book Genre Classifier</b></div>
 </head>
 
 <body>
-    <div class="center">
-        <form action="/" method="post">
-            <label for="text"><b>Enter Description</b></label> <br />
-            <textarea id="text" name="text"></textarea> <br />
-            <input type="submit" value="Submit">
-        </form>
+    <div class="header"><b>Movie Genre Classifier</b></div>
+    <div class="container">
+        <div class="description">
+            <p>This Classifier takes 'movie description' as input to predict its probable genres. Enter your description text below.</p>
+        </div>
+        <div class="form-wrapper">
+            <form action="/" method="post">
+                <label for="text">Enter Description</label>
+                <textarea id="text" name="text" placeholder="Type your text here..."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 </body>
 

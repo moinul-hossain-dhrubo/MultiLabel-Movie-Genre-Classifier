@@ -1,41 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Genre Classifier - Result</title>
     <style>
-        .head {
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 2em;
+            font-size: 2em;
+        }
+
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 30px;
-            height: 5ch;
+            flex-direction: column;
+            height: 80vh;
         }
 
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50vh;
-            font-size: 25px;
+        .result-wrapper {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 400px;
+            text-align: center;
         }
 
-        #text {
-            height: 100px;
-            width: 500px;
-            font-size: 20px;
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        #result-text {
+            font-size: 1em;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
         }
     </style>
-    <div class="head"><b>Book Genre Classifier</b></div>
 </head>
 
 <body>
-    <div class="center">
-        <div style="height: 100px; width: 1000px;">
-            <label for="text"><b>Input Text</b></label> <br />
-            {{ input_text }} <br /> <br />
-            <label for="text"><b>Genres</b></label> <br />
-            {{ output_text }}
+    <div class="header"><b>Movie Genre Classifier - Result</b></div>
+    <div class="container">
+        <div class="result-wrapper">
+            <label for="result-text">Input Text</label>
+            <div id="result-text">{{ input_text }}</div>
+            <label for="result-text">Genres</label>
+            <div id="result-text">{{ output_text }}</div>
         </div>
     </div>
 </body>
 
 </html>
+
