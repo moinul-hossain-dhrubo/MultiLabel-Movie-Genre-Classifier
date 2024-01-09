@@ -8,9 +8,9 @@ The model can classify 21 different types of book genres <br/>The keys of `deplo
 
 Data was collected from [IMDB official Website](https://www.imdb.com/search/title/?title_type=feature) Listing.  <br/>
 
-**Movie Details Scraping:** movie title, description and genres are scraped using selenium library. The code can be found in `scraper\scrape.py` folder.
+**Movie Details Scraping:** movie title, description and genres are scraped using selenium library. The code can be found in `scraper/scrape.py` folder.
 
-In total, 13,001 movie details were scraped till 1/8/24. The collection process is still in progress. the data are stored in `data\movie_data.csv`.
+In total, 13,001 movie details were scraped till 1/8/24. The collection process is still in progress. the data are stored in `data/movie_data.csv`.
 
 ## Data Preprocessing
 
@@ -22,7 +22,7 @@ Finetuned a `distilrobera-base` model from HuggingFace Transformers using Fastai
 
 ## Model Compression and ONNX Inference
 
-The trained model has a memory of 300+MB. This model was compressed using ONNX quantization and brought under 80MB. The model can be found in `models` folder.
+The trained model has a memory of 300+MB. This model was compressed using ONNX quantization and brought under 80MB. The compression code can be found in `notebooks/ONNX_inference` The model can be found in `models` folder.
 
 ## Model Deployment
 
