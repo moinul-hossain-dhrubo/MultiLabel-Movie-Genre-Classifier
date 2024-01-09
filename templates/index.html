@@ -37,13 +37,15 @@
             font-weight: bold;
         }
 
-        .form-wrapper {
-            background-color: #fff;
+        .form-wrapper,
+        .examples {
+            background-color: #ddd; /* Changed background color to gray */
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            width: 400px;
+            padding: 20px;
+            width: 60%; /* Widened the container */
             text-align: center;
+            margin-bottom: 20px;
         }
 
         label {
@@ -73,6 +75,24 @@
             border-radius: 8px;
             cursor: pointer;
         }
+
+        .examples-heading {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .example-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .example-list-item {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -88,6 +108,13 @@
                 <textarea id="text" name="text" placeholder="Type your text here..."></textarea>
                 <input type="submit" value="Submit">
             </form>
+        </div>
+        <div class="examples">
+            <p class="examples-heading">Search Examples:</p>
+            <ul class="example-list">
+                <li class="example-list-item">1. A student at Oxford University finds himself drawn into the world of a charming and aristocratic classmate, who invites him to his eccentric family's sprawling estate for a summer never to be forgotten.</li>
+                <li class="example-list-item">2. A cranky history teacher at a remote prep school is forced to remain on campus over the holidays with a troubled student who has no place to go.</li>
+            </ul>
         </div>
     </div>
 </body>
