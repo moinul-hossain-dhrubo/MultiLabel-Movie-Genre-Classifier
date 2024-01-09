@@ -22,7 +22,7 @@ Finetuned a `distilrobera-base` model from HuggingFace Transformers using Fastai
 
 ## Model Compression and ONNX Inference
 
-The trained model has a memory of 300+MB. This model was compressed using ONNX quantization and brought under 80MB. The compression code can be found in `notebooks/ONNX_inference` The model can be found in `models` folder.
+The trained model has a memory of 300+MB. This model was compressed using ONNX quantization and brought under 80MB. The compression code can be found in `notebooks/ONNX_Inference.ipynb` and the model can be found in `models` folder.
 
 ## Model Deployment
 
