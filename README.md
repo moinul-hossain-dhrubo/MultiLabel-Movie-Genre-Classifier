@@ -6,7 +6,7 @@ The model can classify 21 different types of book genres <br/>The keys of `deplo
 
  ## Data Collection
 
-Data was collected from IMDB official Website Listing: https://www.imdb.com/search/title/?title_type=feature <br/>
+Data was collected from [IMDB official Website](https://www.imdb.com/search/title/?title_type=feature) Listing.  <br/>
 
 **Movie Details Scraping:** movie title, description and genres are scraped using selenium library. The code can be found in `scraper\scrape.py` folder.
 
@@ -26,13 +26,13 @@ The trained model has a memory of 300+MB. This model was compressed using ONNX q
 
 ## Model Deployment
 
-The compressed model is deployed to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder.
+The compressed model is deployed to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder. <br/>Hugging face Space [link here](https://huggingface.co/spaces/mhdhrubo/movie-genre_classifier)
 
 <img src = "deployment/hugging_face.png" width="800" height="400">
 
 
 ## Web Deployment
-Deployed a Flask App built to take descprition and show the genres as output. Check `flask ` branch. The website is live [here](https://multilabel-movie-genre-classifier.onrender.com/) 
+Deployed a Flask App built to take descprition and show the genres as output. Check the `flask ` branch or [click here](https://github.com/moinul-hossain-dhrubo/MultiLabel-Movie-Genre-Classifier/tree/flask). The website is live [here](https://multilabel-movie-genre-classifier.onrender.com/) 
 
 <img src = "deployment/render_home.png" width="800" height="400">
 <img src = "deployment/render_result.png" width="800" height="400">
