@@ -35,4 +35,4 @@ The compressed model is deployed to HuggingFace Spaces Gradio App. The implement
 Deployed a Flask App built to take descprition and show the genres as output. Check `flask ` branch. The website is live [here](https://multilabel-movie-genre-classifier.onrender.com/) 
 
 <img src = "deployment/render_home.png" width="800" height="400">
-<img src = "deployment/render_result" width="800" height="400">
+<img src = "deployment/render_result.png" width="800" height="400">
