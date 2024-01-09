@@ -28,8 +28,11 @@ The trained model has a memory of 300+MB. This model was compressed using ONNX q
 
 The compressed model is deployed to HuggingFace Spaces Gradio App. The implementation can be found in `deployment` folder.
 
-
+<img src = "deployment/hugging_face.png" width="800" height="400">
 
 
 ## Web Deployment
 Deployed a Flask App built to take descprition and show the genres as output. Check `flask ` branch. The website is live [here](https://multilabel-movie-genre-classifier.onrender.com/) 
+
+<img src = "deployment/render_home.png" width="800" height="400">
+<img src = "deployment/render_result" width="800" height="400">
