@@ -7,7 +7,7 @@
     <title>Movie Genre Classifier - Result</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Georgia', serif;
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
@@ -30,30 +30,27 @@
         }
 
         .result-wrapper {
-            background-color: #fff;
+            background-color: #ddd;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            width: 400px;
+            padding: 20px;
+            width: 60%;
             text-align: center;
-            position: relative;
-        }
-
-        label {
-            font-size: 1.2em;
-            display: block;
-            margin-bottom: 15px;
-        }
-
-        #result-text {
-            font-size: 1em;
-            padding: 15px;
             margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
         }
 
-        #search-new-btn {
+        .result-heading {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-decoration: underline; /* Underline for the heading */
+        }
+
+        .result-text {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .return-home {
             font-size: 1.2em;
             padding: 15px 30px;
             background-color: #007bff;
@@ -61,23 +58,20 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            position: absolute;
-            bottom: -40px; /* Adjust the value as needed */
-            left: 50%;
-            transform: translateX(-50%);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="header"><b>Movie Genre Classifier - Result</b></div>
+    <div class="header"><b>Movie Genre Classifier</b></div>
     <div class="container">
         <div class="result-wrapper">
-            <label for="result-text">Input Text</label>
-            <div id="result-text">{{ input_text }}</div>
-            <label for="result-text">Genres</label>
-            <div id="result-text">{{ output_text }}</div>
-            <button id="search-new-btn" onclick="window.location.href='/';">Search New</button>
+            <p class="result-heading">Predicted movie genres:</p>
+            <p class="result-text">{{ output_text }}</p>
+            <a href="/" class="return-home">Search New</a>
         </div>
     </div>
 </body>
