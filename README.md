@@ -10,7 +10,8 @@ Data was collected from [IMDB official Website](https://www.imdb.com/search/titl
 
 **Movie Details Scraping:** movie title, description and genres are scraped using selenium library. The code can be found in `scraper/scrape.py` folder.
 
-In total, 13,001 movie details were scraped till 1/8/24. The collection process is still in progress. the data are stored in `data/movie_data.csv`.
+In total, 13,001 movie details were scraped till 1/8/24. The collection process is still in progress. the data are stored in `data/movie_data.csv`.</br>
+Update : 19500 movies collected(yet to be trained)
 
 ## Data Preprocessing
 
