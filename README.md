@@ -1,4 +1,4 @@
-# MULTILABEL-MOVIE-GENRE-CLASSIFIER
+# MULTILABEL MOVIE GENRE CLASSIFIER
 
 ## Objective
 The goal of this project was to build a multi-label text classification model that can predict movie genres from its description. The project includes data collection, cleaning, model training, deployment, and API integration. <br/>
